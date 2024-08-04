@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  box-sizing: border-box;
+@apply transition-all;
+}
+
+body{
+  --vc-pgn-width: 15px;
+  --vc-pgn-height: 15px;
+  --vc-pgn-border-radius: 100%;
+  --vc-pgn-background-color: #E4E7EC;
+  --vc-pgn-active-color: #FD853A;
+}
+
+.carousel__pagination-button--active::after{
+  --vc-pgn-width: 60px;
+  --vc-pgn-border-radius: 20px;
+}
